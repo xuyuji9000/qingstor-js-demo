@@ -1,5 +1,11 @@
 let QingStor = require('qingstor-sdk').QingStor
 let Config = require('qingstor-sdk').Config
+
+if(!process.env.QINGCLOUD_ACCESS_KEY_ID || !process.env.QINGCLOUD_SECRET_ACCESS_KEY || !process.env.QINGCLOUD_LOCATION) {
+    console.log('Error, checkout qingcloud configuration in Readme.')
+    return
+}
+
 let config = new Config(process.env.QINGCLOUD_ACCESS_KEY_ID, process.env.QINGCLOUD_SECRET_ACCESS_KEY)
 
 let service = new QingStor(config)

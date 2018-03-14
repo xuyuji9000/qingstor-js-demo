@@ -12,9 +12,5 @@
   "dependencies": {
     "qingstor-sdk": "^2.2.10"
   },
-  "devDependencies": {
-    "@babel/core": "^7.0.0-beta.40",
-    "@babel/node": "^7.0.0-beta.40",
-    "babel-preset-env": "^1.6.1"
-  }
+  "devDependencies": {}
 }
